@@ -26,45 +26,61 @@
 ### Dispatch
 
 - 廖明志
+
   - `front end`
+
   * `integration`
+
 - 吳博霖
 
   - `Django model building`
+
   - `view of user posting`
 
 - 張育騰
+
   - `view of home page`
+
   - `view of specific post content`
 
 ### Code & Unit test
 
 - 廖明志
+
   - `front end`
     ```
     result
     ```
+
   * `integration`
     ```
     result
     ```
+
 - 吳博霖
 
   - `Django model building`
+
     ```
     result
     ```
+
   - `view of user posting`
+
     ```
     result
     ```
 
 - 張育騰
+
   - `view of home page`
+
     ```
     result
     ```
+
   - `view of specific post content`
+
     ```
     result
     ```
