@@ -48,16 +48,18 @@
 
 - 廖明志
 
-  - `front end`
+  - `integration`
 
     ```
-    result
-    ```
+    Creating test database for alias 'default'...
+    System check identified no issues (0 silenced).
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.043s
 
-  * `integration`
+    OK
+    Destroying test database for alias 'default'...
 
-    ```
-    result
     ```
 
 - 吳博霖
@@ -120,6 +122,20 @@
     ```
 
 ### Integration & Test
+
+- result
+
+  ```
+  Creating test database for alias 'default'...
+  System check identified no issues (0 silenced).
+  .....
+  ----------------------------------------------------------------------
+  Ran 5 tests in 0.041s
+
+  OK
+  Destroying test database for alias 'default'...
+
+  ```
 
 ### Demo
 ![](src\demo.gif)
