@@ -4,7 +4,12 @@ from .models import Post
 
 
 def home(request):
-    return render(request, 'home.html')
+    posts = Post.objects.all()
+    data = {
+        'posts': posts,
+    }
+
+    return render(request, 'home.html', data)
 
 
 def post(request):
@@ -18,4 +23,8 @@ def post(request):
 
 
 def show(request, pk=0):
-    return render(request, 'show.html')
+    p = Post.objects.filter(id=pk)[0]
+    data = {
+        'post': p,
+    }
+    return render(request, 'show.html', data)
