@@ -17,6 +17,5 @@
 ## Post Attribute
 
 - id ( integer )
-- author ( text )
 - title ( text )
 - content ( text )
