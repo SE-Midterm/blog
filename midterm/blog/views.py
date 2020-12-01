@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
+from .models import Post
 
 
 def home(request):
@@ -6,6 +8,12 @@ def home(request):
 
 
 def post(request):
+    if request.method == 'POST':
+        t = request.POST.get('title')
+        c = request.POST.get('content')
+        add = Post(title=t, content=c)
+        add.save()
+        return redirect('home')
     return render(request, 'post.html')
 
 

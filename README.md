@@ -79,7 +79,15 @@
   - `view of user posting`
 
     ```
-    result
+    resCreating test database for alias 'default'...
+    System check identified no issues (0 silenced).
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.033s
+
+    OK
+    Destroying test database for alias 'default'...
+    ult
     ```
 
 - 張育騰
