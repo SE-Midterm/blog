@@ -29,6 +29,34 @@ class ModelTest(TestCase):
         post.delete()
 
 
+class HomePageTest(TestCase):
+    def setUp(self):
+        Post.objects.create(title='hello blog', content='Homepage Test')
+
+    def test_homepage(self):
+        postNum = Post.objects.count()
+        self.assertEqual(postNum, 1)
+
+    def tearDown(self):
+        post = Post.objects.get(title='hello blog')
+        post.delete()
+
+
+class PostContentTest(TestCase):
+    def setUp(self):
+        Post.objects.create(title='hello blog', content='Post Content Test')
+
+    def test_content(self):
+        c = Client()
+        post = Post.objects.first()
+        response = c.get('http://127.0.0.1:8000/blog/post/%d/' % post.id)
+        self.assertEqual(response.status_code, 200)
+
+    def tearDown(self):
+        post = Post.objects.get(title='hello blog')
+        post.delete()
+
+
 class IntegrationTest(TestCase):
     def test_integration(self):
         c = Client()
