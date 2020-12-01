@@ -138,6 +138,7 @@
   ```
 
 ### Demo
-![](src\demo.gif)
+
+<img src="src\demo.gif" style="zoom:50%" width="1000px"/>
 
 ### Publish
