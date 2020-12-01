@@ -1,0 +1,10 @@
+{% extends 'blog.html' %}
+{% block content %}
+    <form class="text-center border border-light p-5" action="/blog/post/" method="post">
+    {% csrf_token %}
+        <p class="h4 mb-4">New Post</p>
+        <input class="form-control mb-4" type="text" placeholder="Title" name="title">
+        <textarea class="form-control" placeholder="Contents" name="content" rows="3"></textarea>
+        <button class="btn btn-primary btn-block my-4" type="submit">Create</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "blog.html" %}
+{% block content %}
+    {% if posts %}
+        <div class="ml-3 p-3 text-center">
+            <p class="mb-3">There are <strong>{{ posts.count }}</strong> posts!</p>
+            <a href="post/" class="text-decoration-none">Write a Post</a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {% for post in posts %}
+                    <div class="p-3 col-7 mx-auto">
+                        <div class="card card-cascade wider reverse ml-3">
+                            <div class="card-body card-body-cascade">
+                                <h5 class="card-title">
+                                    {{ post.title }}
+                                </h5>
+                                <a
+                                        href="post/{{ post.id }}"
+                                        class="black-text float-right text-decoration-none"
+                                >
+                                    <h5>Read post <i class="fas fa-chevron-right"></i></h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <div class="ml-3 p-3 text-center">
+            <p>There is no post. How about <a href="post/" class="text-decoration-none">write one</a> ?</p>
+        </div>
+    {% endif %}
+{% endblock %}
