@@ -137,8 +137,6 @@
 
   ```
 
-### Demo
-
-<img src="src\demo.gif" style="zoom:50%" width="1000px"/>
+### [Demo](https://github.com/SE-Midterm/blog/blob/v1.0.0/src/demo.gif)
 
 ### Publish
